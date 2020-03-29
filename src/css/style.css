@@ -1,0 +1,16 @@
+/* colors */
+
+body {
+	background-color: #00f;
+	color: #fff;
+	font-family: "Helvetica Neue", Arial, "Hiragino Kaku Gothic ProN", "Hiragino Sans", Meiryo, sans-serif;
+}
+
+.clickable-img {
+	width: 30%;
+}
+
+.bgc--mod {
+	background-color: #f00;
+}
+
