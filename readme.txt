@@ -10,7 +10,7 @@ project/
 	 ├ js/  JavaScriptファイル置き場
 	 └ sass/  sassファイル置き場
 
-Git、nmpがインストールされていることが前提条件です。任意のフォルダに移動した上で、以下のコマンドを実行してください。
+Git、npmがインストールされていることが前提条件です。任意のフォルダに移動した上で、以下のコマンドを実行してください。
 $ git clone https://github.com/gsg0222/gulpfile-sample.git
 $ cd gulpfile-sample
 $ npm install
