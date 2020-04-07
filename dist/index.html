@@ -4,17 +4,52 @@
 <head>
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<title>Gulpfile.js開発のサンプルページ</title>
+	<title>Document</title>
+	<link rel="stylesheet" href="css/html5reset-1.6.1.css">
+	<!-- drawer.css -->
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/drawer/3.2.2/css/drawer.min.css">
 	<link rel="stylesheet" href="css/style.css">
 </head>
 
-<body>
-	<main>
-		<h1>Gulpfile.js開発のサンプルページ</h1>
-		<p>下の画像をクリックすると背景色が変わります。</p>
-		<img class="clickable-img" src="./img/sample.jpg" alt="サンプル画像" onclick="changeBGC()">
-	</main>
-	<script type="text/javascript" src="js/script.min.js"></script>
+<body class="drawer drawer--right">
+	<header class="header" role="banner">
+		<div class="header__inner">
+			<div class="brand">
+				<figure>
+					<img src="img/Pink and Purple Events & party Entertainment Logo.png" alt="" class="brand__img">
+				</figure>
+				<h1 class="brand__title">ユアコーディング</h1>
+			</div>
+			<!-- /.brand -->
+			<nav class="header__nav nav">
+				<ul class="nav__inner">
+					<li class="nav__item"><a class="nav__link" href="#">特徴</a></li>
+					<li class="nav__item"><a class="nav__link" href="#">価格</a></li>
+					<li class="nav__item"><a class="nav__link" href="#">お問い合わせ</a></li>
+				</ul>
+			</nav>
+			<a class="btn">お問い合わせ</a>
+		</div>
+		<!-- /.header__inner -->
+
+		<button type="button" class="header__hamburger drawer-toggle drawer-hamburger">
+			<span class="sr-only">toggle navigation</span>
+			<span class="drawer-hamburger-icon"></span>
+		</button>
+		<nav class="drawer-nav" role="navigation">
+			<ul class="drawer-menu">
+				<li><a class="drawer-brand" href="#">Brand</a></li>
+				<li><a class="drawer-menu-item" href="#">Nav1</a></li>
+				<li><a class="drawer-menu-item" href="#">Nav2</a></li>
+			</ul>
+		</nav>
+	</header>
+	<!-- jquery & iScroll -->
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/iScroll/5.2.0/iscroll.min.js"></script>
+	<!-- drawer.js -->
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/drawer/3.2.2/js/drawer.min.js"></script>
+	<script src="js/script.min.js"></script>
 </body>
 
 </html>

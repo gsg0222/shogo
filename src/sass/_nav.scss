@@ -1,0 +1,27 @@
+.nav {
+
+    &__inner {
+        height: 47px;
+        display: flex;
+        align-items: center;
+    }
+
+    &__item {
+        margin-right: 46px;
+
+        &:last-child {
+            margin-right: 0;
+        }
+    }
+
+    &__link {
+        text-decoration: none;
+        color: $text-default;
+        transition: .25s;
+
+        &:hover,
+        &:focus {
+            opacity: 0.6;
+        }
+    }
+}

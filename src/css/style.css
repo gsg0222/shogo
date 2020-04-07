@@ -1,16 +1,100 @@
-/* colors */
+@import url("https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@700&family=Roboto:wght@700&display=swap");
 
 body {
-	background-color: #00f;
-	color: #fff;
-	font-family: "Helvetica Neue", Arial, "Hiragino Kaku Gothic ProN", "Hiragino Sans", Meiryo, sans-serif;
+	color: #333333;
+	font-family: Roboto, 'Noto Sans JP', "Helvetica Neue", Arial, "Hiragino Kaku Gothic ProN", "Hiragino Sans", Meiryo, sans-serif;
+	font-weight: bold;
 }
 
-.clickable-img {
-	width: 30%;
+.header {
+	box-shadow: 0px 3px 6px rgba(0, 0, 0, 0.16);
+	width: 100%;
 }
 
-.bgc--mod {
-	background-color: #f00;
+.header__inner {
+	align-items: center;
+	display: flex;
+	justify-content: space-between;
+	margin-left: 12.6%;
+	margin-right: 12.6%;
+	padding-bottom: 23px;
+	padding-top: 24px;
+}
+
+.header__hamburger {
+	display: none;
+}
+
+.brand {
+	align-items: center;
+	display: flex;
+}
+
+.brand__img {
+	height: 47px;
+	width: 47px;
+}
+
+.brand__title {
+	display: block;
+	font-size: 1.5rem;
+	margin-left: 16px;
+}
+
+.nav__inner {
+	align-items: center;
+	display: flex;
+	height: 47px;
+}
+
+.nav__item {
+	margin-right: 46px;
+}
+
+.nav__item:last-child {
+	margin-right: 0;
+}
+
+.nav__link {
+	color: #333333;
+	text-decoration: none;
+	transition: .25s;
+}
+
+.nav__link:hover,
+.nav__link:focus {
+	opacity: 0.6;
+}
+
+.btn {
+	background: linear-gradient(to right, #FA41CC, #6020B0);
+	border-radius: 10px;
+	box-shadow: 0px 3px 6px rgba(0, 0, 0, 0.16);
+	color: #FFFFFF;
+	display: inline-block;
+	height: 17px;
+	max-width: 100%;
+	padding: 10px 10px;
+	text-align: center;
+	text-decoration: none;
+	transition: .25s;
+	width: 155px;
+}
+
+.btn:hover,
+.btn:focus {
+	opacity: 0.6;
+}
+
+@media screen and (max-width: 991px) {
+
+.header__nav {
+	display: none;
+}
+
+.header__hamburger {
+	display: block;
+}
+
 }
 
