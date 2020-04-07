@@ -1,0 +1,51 @@
+.concept {
+    position: relative;
+    display: flex;
+    margin-left: 12.6%;
+    padding-bottom: 113px;
+    margin-bottom: 80px;
+
+    &__detail {
+        padding-top: 130px;
+        width: 50%;
+    }
+
+    &__heading {
+        font-size: 2rem;
+        line-height: 1.7;
+        margin-bottom: 30px;
+    }
+
+    &__text {
+        line-height: 1.7;
+        margin-bottom: 35px;
+    }
+
+    &__img-wrapper {
+        padding-top: 130px;
+        padding-bottom: 110px;
+        padding-right: 12.6%;
+        width: 50%;
+        background-image: url(../img/oval.svg);
+        background-position: left 50px bottom 100px;
+        background-repeat: no-repeat;
+    }
+
+    &__img {
+        width: 100%;
+    }
+
+    // &__background-wrapper {
+    //     position: absolute;
+    //     overflow: hidden;
+    //     z-index: -1;
+    //     top: -200px;
+    //     right: -200px;
+    // }
+
+    &__background {
+        width: 623px;
+        height: 681px;
+        overflow: hidden;
+    }
+}

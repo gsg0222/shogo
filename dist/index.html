@@ -14,9 +14,9 @@
 <body class="drawer drawer--right">
 	<header class="header" role="banner">
 		<div class="header__inner">
-			<div class="brand">
+			<div class="header__brand brand">
 				<figure>
-					<img src="img/Pink and Purple Events & party Entertainment Logo.png" alt="" class="brand__img">
+					<img src="img/Pink and Purple Events & party Entertainment Logo.png" alt="ロゴ" class="brand__img">
 				</figure>
 				<h1 class="brand__title">ユアコーディング</h1>
 			</div>
@@ -28,7 +28,7 @@
 					<li class="nav__item"><a class="nav__link" href="#">お問い合わせ</a></li>
 				</ul>
 			</nav>
-			<a class="btn">お問い合わせ</a>
+			<a class="header__btn btn">お問い合わせ</a>
 		</div>
 		<!-- /.header__inner -->
 
@@ -38,12 +38,42 @@
 		</button>
 		<nav class="drawer-nav" role="navigation">
 			<ul class="drawer-menu">
-				<li><a class="drawer-brand" href="#">Brand</a></li>
-				<li><a class="drawer-menu-item" href="#">Nav1</a></li>
-				<li><a class="drawer-menu-item" href="#">Nav2</a></li>
+				<li><a class="drawer-brand" href="#">
+						<div class="brand">
+							<figure>
+								<img src="img/Pink and Purple Events & party Entertainment Logo.png" alt="ロゴ"
+									class="brand__img">
+							</figure>
+							<h2 class="brand__title">ユアコーディング</h2>
+						</div>
+						<!-- /.brand -->
+					</a>
+				</li>
+				<li><a class="drawer-menu-item" href="#">特徴</a></li>
+				<li><a class="drawer-menu-item" href="#">価格</a></li>
+				<li><a class="drawer-menu-item" href="#">お問い合わせ</a></li>
 			</ul>
 		</nav>
 	</header>
+
+	<article class="concept">
+		<div class="concept__detail">
+			<h2 class="concept__heading">コーディングの手間を<br>最小に、デザインに注力<br>する助けに</h2>
+			<h3 class="concept__text">ユアコーディングはコーディングに<br>特化したフリーランス<br>デザインに注力されたい方の<br>助けになります</h3>
+			<a class="header__btn btn">お問い合わせ</a>
+		</div>
+		<!-- /.concept__detail -->
+		<div class="concept__img-wrapper">
+			<figure>
+				<img src="img/manager.png" alt="忙しいマネージャー" class="concept__img">
+			</figure>
+		</div>
+		<!-- /.concept__img-wrapper -->
+		<!-- <div class="concept__background-wrapper">
+			<img src="img/oval.svg" alt="コンセプト背景" class="concept__background">
+		</div> -->
+		<!-- /.concept__background-wrapper -->
+	</article>
 	<!-- jquery & iScroll -->
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
 	<script src="https://cdnjs.cloudflare.com/ajax/libs/iScroll/5.2.0/iscroll.min.js"></script>
