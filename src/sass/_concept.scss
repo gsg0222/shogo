@@ -2,8 +2,7 @@
     position: relative;
     display: flex;
     margin-left: 12.6%;
-    padding-bottom: 113px;
-    margin-bottom: 80px;
+    margin-bottom: 60px;
 
     @include mq() {
         flex-direction: column-reverse;

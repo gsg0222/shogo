@@ -1,0 +1,9 @@
+.features {
+    margin-bottom: 156px;
+
+    @include mq(lg) {
+        margin-right: 5%;
+        margin-left: 5%;
+        margin-bottom: 30px;
+    }
+}

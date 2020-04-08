@@ -1,0 +1,224 @@
+.feature {
+
+    @include mq() {
+        padding-bottom: 10px;
+        border-bottom: 1px solid #bbbbbb;
+    }
+
+    &__heading {
+        text-align: center;
+        font-size: 1.75rem;
+
+        @include mq(lg) {
+            font-size: 1.125rem;
+        }
+    }
+
+    &__body {
+        display: flex;
+
+        @include mq() {
+            display: block;
+        }
+    }
+
+
+    &__img {
+        width: 100%;
+        object-fit: contain;
+    }
+
+    &__strong {
+        font-size: 1.5rem;
+        line-height: 2;
+        width: 502px;
+        max-width: 100%;
+
+        @include mq(lg) {
+            font-size: 1rem;
+        }
+    }
+
+    &__normal {
+        line-height: 1.625;
+        width: 400px;
+        max-width: 100%;
+
+        @include mq(lg) {
+            font-size: 0.875rem;
+        }
+    }
+
+    /* 特徴ごとにレイアウトが微妙に違うため、それぞれにMODクラスを作成 */
+    &--layout1 {
+        margin-bottom: 93px;
+
+        @include mq() {
+            margin-bottom: 30px;
+        }
+
+        .feature {
+            &__heading {
+                margin-bottom: 54px;
+
+                @include mq() {
+                    margin-bottom: 20px;
+                }
+            }
+
+            &__img-wrapper {
+                display: flex;
+                justify-content: flex-end;
+                padding-right: 7.3%;
+                width: 41.5%;
+
+                @include mq() {
+                    display: block;
+                    padding-right: 0;
+                    width: 100%;
+                }
+            }
+
+            &__img {
+                width: 380px;
+                max-width: 100%;
+            }
+
+            &__text {
+                padding-left: 3.7%;
+                width: 44.5%;
+
+                @include mq() {
+                    display: block;
+                    padding-left: 0;
+                    width: 100%;
+                }
+            }
+
+            &__strong {
+                margin-top: 54px;
+                margin-bottom: 37px;
+
+                @include mq() {
+                    margin-top: 20px;
+                    margin-bottom: 20px;
+                }
+
+            }
+        }
+    }
+
+    &--layout2 {
+        margin-bottom: 143px;
+
+        @include mq() {
+            margin-bottom: 30px;
+        }
+
+        .feature {
+            &__body {
+                flex-direction: row-reverse;
+            }
+
+            &__heading {
+                margin-bottom: 64px;
+
+                @include mq() {
+                    margin-bottom: 20px;
+                }
+            }
+
+            &__img-wrapper {
+                width: 44.9%;
+                margin-left: 5.1%;
+
+                @include mq() {
+                    width: 100%;
+                    margin-left: 0;
+                }
+            }
+
+            &__img {
+                width: 479px;
+                max-width: 100%;
+            }
+
+            &__text {
+                padding-left: 16.2%;
+                width: 33.8%;
+
+                @include mq() {
+                    width: 100%;
+                    padding-left: 0;
+                }
+            }
+
+            &__strong {
+                margin-top: 64px;
+                margin-bottom: 32px;
+
+                @include mq() {
+                    margin-top: 20px;
+                    margin-bottom: 20px;
+                }
+            }
+
+            &__normal {
+                width: 447px;
+                max-width: 100%;
+            }
+
+        }
+    }
+
+    &--layout3 {
+        .feature {
+            &__heading {
+                margin-bottom: 67px;
+
+                @include mq() {
+                    margin-bottom: 20px;
+                }
+            }
+
+            &__img-wrapper {
+                display: flex;
+                justify-content: flex-end;
+                padding-right: 3.3%;
+                width: 46.7%;
+
+                @include mq() {
+                    display: block;
+                    padding-right: 0;
+                    width: 100%;
+                }
+            }
+
+            &__img {
+                width: 400px;
+                max-width: 100%;
+
+            }
+
+            &__text {
+                padding-left: 6.3%;
+                width: 46.7%;
+
+                @include mq() {
+                    padding-left: 0;
+                    width: 100%;
+                }
+            }
+
+            &__strong {
+                margin-top: 15px;
+                margin-bottom: 25px;
+
+                @include mq() {
+                    margin-top: 20px;
+                    margin-bottom: 20px;
+                }
+            }
+        }
+    }
+}
