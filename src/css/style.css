@@ -137,6 +137,14 @@ body {
 	margin-bottom: 156px;
 }
 
+.features__heading {
+	margin-bottom: 20px;
+}
+
+.features__english {
+	margin-bottom: 67px;
+}
+
 .feature { /* 特徴ごとにレイアウトが微妙に違うため、それぞれにMODクラスを作成 */
 }
 
@@ -263,18 +271,25 @@ body {
 
 .heading {
 	font-size: 2rem;
-	margin-bottom: 20px;
 	text-align: center;
 }
 
-.english {
+.heading__english {
 	color: #3BA6C9;
-	margin-bottom: 67px;
 	text-align: center;
 }
 
 .price {
 	background-color: #EEFBFB;
+	padding-top: 64px;
+}
+
+.price__heading {
+	margin-bottom: 21px;
+}
+
+.price__english {
+	margin-bottom: 73px;
 }
 
 @media screen and (max-width: 991px) {
