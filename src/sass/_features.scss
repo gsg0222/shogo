@@ -1,7 +1,7 @@
 .features {
     margin-bottom: 156px;
 
-    @include mq(lg) {
+    @include mq() {
         margin-right: 5%;
         margin-left: 5%;
         margin-bottom: 30px;
@@ -13,5 +13,9 @@
 
     &__english {
         margin-bottom: 67px;
+
+        @include mq() {
+            margin-bottom: 20px;
+        }
     }
 }

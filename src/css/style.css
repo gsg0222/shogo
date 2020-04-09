@@ -281,6 +281,8 @@ body {
 
 .price {
 	background-color: #EEFBFB;
+	margin-bottom: 64px;
+	padding-bottom: 70px;
 	padding-top: 64px;
 }
 
@@ -290,6 +292,36 @@ body {
 
 .price__english {
 	margin-bottom: 73px;
+}
+
+.price__table-wrapper {
+	margin-left: 16.1%;
+	margin-right: 16.1%;
+}
+
+.price__table {
+	background-color: #FFFFFF;
+	border: 1px solid rgba(0, 0, 0, 0.16);
+	border-collapse: collapse;
+	box-shadow: 0px 3px 6px rgba(0, 0, 0, 0.16);
+	margin-bottom: 40px;
+	width: 100%;
+}
+
+.price__table-header {
+	border-bottom: 1px solid rgba(0, 0, 0, 0.16);
+	border-right: 1px solid rgba(0, 0, 0, 0.16);
+	padding: 40px 20px;
+	width: 16em;
+}
+
+.price__table-text {
+	border-bottom: 1px solid rgba(0, 0, 0, 0.16);
+	padding: 40px 20px;
+}
+
+.price__caution {
+	text-align: center;
 }
 
 @media screen and (max-width: 991px) {
@@ -334,12 +366,6 @@ body {
 
 .concept__text {
 	font-size: 0.875rem;
-}
-
-.features {
-	margin-bottom: 30px;
-	margin-left: 5%;
-	margin-right: 5%;
 }
 
 .feature__heading {
@@ -396,6 +422,16 @@ body {
 	padding-right: 0;
 	padding-top: 30px;
 	width: 95%;
+}
+
+.features {
+	margin-bottom: 30px;
+	margin-left: 5%;
+	margin-right: 5%;
+}
+
+.features__english {
+	margin-bottom: 20px;
 }
 
 .feature {
@@ -473,6 +509,37 @@ body {
 .feature--layout3 .feature__strong {
 	margin-bottom: 20px;
 	margin-top: 20px;
+}
+
+.price {
+	margin-bottom: 30px;
+	padding-bottom: 20px;
+	padding-top: 20px;
+}
+
+.price__english {
+	margin-bottom: 20px;
+}
+
+.price__table-wrapper {
+	margin-left: 5%;
+	margin-right: 5%;
+}
+
+.price__table-wrapper {
+	overflow-x: auto;
+}
+
+.price__table {
+	margin-bottom: 20px;
+}
+
+.price__table-header {
+	white-space: nowrap;
+}
+
+.price__table-text {
+	white-space: nowrap;
 }
 
 }
