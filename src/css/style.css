@@ -301,7 +301,7 @@ body {
 
 .price__table {
 	background-color: #FFFFFF;
-	border: 1px solid rgba(0, 0, 0, 0.16);
+	border: 1px solid #E5E5E5;
 	border-collapse: collapse;
 	box-shadow: 0px 3px 6px rgba(0, 0, 0, 0.16);
 	margin-bottom: 40px;
@@ -309,19 +309,70 @@ body {
 }
 
 .price__table-header {
-	border-bottom: 1px solid rgba(0, 0, 0, 0.16);
-	border-right: 1px solid rgba(0, 0, 0, 0.16);
+	border-bottom: 1px solid #E5E5E5;
+	border-right: 1px solid #E5E5E5;
 	padding: 40px 20px;
 	width: 16em;
 }
 
 .price__table-text {
-	border-bottom: 1px solid rgba(0, 0, 0, 0.16);
+	border-bottom: 1px solid #E5E5E5;
 	padding: 40px 20px;
 }
 
 .price__caution {
 	text-align: center;
+}
+
+.faq {
+	margin-bottom: 86px;
+	margin-left: 17.6%;
+	margin-right: 16.1%;
+}
+
+.faq__heading {
+	margin-bottom: 20px;
+}
+
+.faq__english {
+	margin-bottom: 35px;
+}
+
+.faq__title {
+	width: 100%;
+}
+
+.faq__btn {
+	background-color: #FFFFFF;
+	border: 1px solid #E5E5E5;
+	cursor: pointer;
+	display: block;
+	font-size: 0.875rem;
+	font-weight: bold;
+	line-height: 1.625;
+	padding: 22px 40px;
+	text-align: center;
+	transition: .25s;
+	width: 100%;
+}
+
+.faq__btn:hover,
+.faq__btn:focus {
+	opacity: 0.6;
+}
+
+.faq__body {
+	background-color: #F2F2F2;
+	border: 1px solid #E5E5E5;
+	display: none;
+	font-size: 0.875rem;
+	line-height: 1.625;
+	padding: 20px 40px;
+	width: calc(100% - 80px - 2px);
+}
+
+.faq__body--active {
+	display: block;
 }
 
 @media screen and (max-width: 991px) {
@@ -540,6 +591,26 @@ body {
 
 .price__table-text {
 	white-space: nowrap;
+}
+
+.faq {
+	margin-bottom: 30px;
+	margin-left: auto;
+	margin-right: auto;
+	width: 90%;
+}
+
+.faq__english {
+	margin-bottom: 20px;
+}
+
+.faq__btn {
+	padding: 15px 30px;
+}
+
+.faq__body {
+	padding: 15px 30px;
+	width: calc(100% - 60px - 2px);
 }
 
 }
