@@ -375,6 +375,89 @@ body {
 	display: block;
 }
 
+.blog {
+	background-color: #EEFBFB;
+	padding-bottom: 90px;
+	padding-top: 64px;
+}
+
+.blog__heading {
+	margin-bottom: 20px;
+}
+
+.blog__english {
+	margin-bottom: 67px;
+}
+
+.blog__cards {
+	display: flex;
+	flex-wrap: wrap;
+	margin-left: 5.1%;
+	margin-right: 5.1%;
+}
+
+.blog__item {
+	margin-right: 30px;
+	width: calc(((100% - 60px)/3) - 1px);
+}
+
+.blog__item:nth-child(3n) {
+	margin-right: 0;
+}
+
+.card {
+	background-color: #FFFFFF;
+	box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16);
+	position: relative;
+}
+
+.card__img-wrapper {
+	overflow: hidden;
+	padding-top: 66.7%;
+	position: relative;
+}
+
+.card__img {
+	position: absolute;
+	top: 50%;
+	transform: translateY(-50%);
+	width: 100%;
+}
+
+.card__body {
+	padding: 20px 30px 40px 20px;
+}
+
+.card__text {
+	font-size: 1.125rem;
+}
+
+.card__date {
+	bottom: 13px;
+	position: absolute;
+	right: 18px;
+}
+
+.card--link {
+	display: block;
+	text-decoration: none;
+	transition: .25s;
+}
+
+.card--link .card__text {
+	transition: .25s;
+}
+
+.card--link:focus,
+.card--link:hover {
+	opacity: .6;
+}
+
+.card--link:focus .card__text,
+.card--link:hover .card__text {
+	text-decoration: underline;
+}
+
 @media screen and (max-width: 991px) {
 
 .header__inner {
@@ -611,6 +694,46 @@ body {
 .faq__body {
 	padding: 15px 30px;
 	width: calc(100% - 60px - 2px);
+}
+
+.blog {
+	padding-bottom: 30px;
+	padding-top: 30px;
+}
+
+.blog__english {
+	margin-bottom: 20px;
+}
+
+.blog__cards {
+	display: block;
+	margin-left: auto;
+	margin-right: auto;
+	width: 90%;
+}
+
+.blog__item {
+	margin-bottom: 20px;
+	margin-right: 0;
+	width: 100%;
+}
+
+.blog__item:last-child {
+	margin-bottom: 0;
+}
+
+.card__body {
+	padding: 15px 25px 30px 15px;
+}
+
+.card__text {
+	font-size: 1rem;
+}
+
+.card__date {
+	bottom: 6px;
+	font-size: 0.875em;
+	right: 12px;
 }
 
 }

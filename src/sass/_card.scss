@@ -1,0 +1,66 @@
+.card {
+    position: relative;
+    box-shadow: 0 3px 6px rgba(0, 0, 0, .16);
+    background-color: $bgc;
+
+    &__img-wrapper {
+        position: relative;
+        padding-top: 66.7%;
+        overflow: hidden;
+    }
+
+    &__img {
+        position: absolute;
+        top: 50%;
+        width: 100%;
+        transform: translateY(-50%);
+    }
+
+    &__body {
+        padding: 20px 30px 40px 20px;
+
+        @include mq() {
+            padding: 15px 25px 30px 15px;
+        }
+    }
+
+    &__text {
+        font-size: 1.125rem;
+
+        @include mq() {
+            font-size: 1rem;
+        }
+    }
+
+    &__date {
+        position: absolute;
+        right: 18px;
+        bottom: 13px;
+
+        @include mq() {
+            font-size: 0.875em;
+            right: 12px;
+            bottom: 6px;
+        }
+    }
+
+    &--link {
+        display: block;
+        text-decoration: none;
+        transition: .25s;
+    }
+
+    &--link &__text {
+        transition: .25s;
+    }
+
+    &--link:focus,
+    &--link:hover {
+        opacity: .6;
+    }
+
+    &--link:focus &__text,
+    &--link:hover &__text {
+        text-decoration: underline;
+    }
+}

@@ -1,4 +1,4 @@
-// 字の大きさを帰るのはlg、マージンなどレイアウトはmdで変える
+// 字の大きさを変えるのはlg、マージンなどレイアウトはmdで変える
 @import "const/**";
 @import "media";
 @import "helper";
@@ -13,3 +13,5 @@
 @import "heading";
 @import "price";
 @import "faq";
+@import "blog";
+@import "card";
