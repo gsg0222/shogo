@@ -38,9 +38,28 @@
         bottom: 13px;
 
         @include mq() {
-            font-size: 0.875em;
+            font-size: 0.875rem;
             right: 12px;
             bottom: 6px;
+        }
+    }
+
+    &__heading {
+        margin-bottom: 24px;
+        line-height: 1.6875;
+
+        @include mq() {
+            font-size: 0.875rem;
+            margin-bottom: 20px;
+        }
+    }
+
+    &__description {
+        font-size: 0.875rem;
+        line-height: 1.714;
+
+        @include mq() {
+            font-size: 0.75rem;
         }
     }
 
@@ -62,5 +81,21 @@
     &--link:focus &__text,
     &--link:hover &__text {
         text-decoration: underline;
+    }
+
+    &--swipe {
+        box-shadow: none;
+        border: 1px solid $border;
+        border-radius: 8px;
+
+        .card {
+            &__body {
+                padding: 17px 20px 29px 20px;
+
+                @include mq() {
+                    padding: 10px 10px 15px 10px;
+                }
+            }
+        }
     }
 }

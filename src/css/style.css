@@ -279,6 +279,10 @@ body {
 	text-align: center;
 }
 
+.heading--white {
+	color: #FFFFFF;
+}
+
 .price {
 	background-color: #EEFBFB;
 	margin-bottom: 64px;
@@ -377,6 +381,7 @@ body {
 
 .blog {
 	background-color: #EEFBFB;
+	margin-bottom: 64px;
 	padding-bottom: 90px;
 	padding-top: 64px;
 }
@@ -438,6 +443,16 @@ body {
 	right: 18px;
 }
 
+.card__heading {
+	line-height: 1.6875;
+	margin-bottom: 24px;
+}
+
+.card__description {
+	font-size: 0.875rem;
+	line-height: 1.714;
+}
+
 .card--link {
 	display: block;
 	text-decoration: none;
@@ -456,6 +471,129 @@ body {
 .card--link:focus .card__text,
 .card--link:hover .card__text {
 	text-decoration: underline;
+}
+
+.card--swipe {
+	border: 1px solid #E5E5E5;
+	border-radius: 8px;
+	box-shadow: none;
+}
+
+.card--swipe .card__body {
+	padding: 17px 20px 29px 20px;
+}
+
+.works {
+	margin-bottom: 90px;
+	width: 100%;
+}
+
+.works__heading {
+	margin-bottom: 20px;
+}
+
+.works__english {
+	margin-bottom: 70px;
+}
+
+.contact {
+	background: linear-gradient(to right, #05A5FA, #67FFD6);
+	padding-bottom: 73px;
+	padding-top: 70px;
+	width: 100%;
+}
+
+.contact__heading {
+	margin-bottom: 17px;
+}
+
+.contact__english {
+	margin-bottom: 39px;
+}
+
+.contact__comment {
+	color: #FFFFFF;
+	line-height: 1.6875;
+	margin-bottom: 37px;
+	text-align: center;
+}
+
+.contact__body {
+	background-color: #FFFFFF;
+	margin-left: 17.6%;
+	margin-right: 16%;
+	padding: 33px 70px 60px 52px;
+}
+
+.contact__input-name {
+	display: inline-block;
+	margin-bottom: 42px;
+}
+
+.contact__must {
+	background-color: #0C449B;
+	border-radius: 10px;
+	color: #FFFFFF;
+	display: inline-block;
+	margin-left: 20px;
+	padding: 7px 16px;
+	top: 0.875rem;
+}
+
+.contact__input-text {
+	-webkit-appearance: none;
+	-moz-appearance: none;
+	appearance: none;
+	background-color: #EEFBFB;
+	border: 1px solid #E5E5E5;
+	height: 43px;
+	margin-bottom: 30px;
+	width: 500px;
+}
+
+.contact__input-textarea {
+	-webkit-appearance: none;
+	-moz-appearance: none;
+	appearance: none;
+	background-color: #EEFBFB;
+	border: 1px solid #E5E5E5;
+	height: 180px;
+	margin-bottom: 53px;
+	resize: none;
+	width: 100%;
+}
+
+.contact__btn {
+	text-align: center;
+}
+
+.contact__btn .btn {
+	color: #FFFFFF;
+	font-family: Roboto, 'Noto Sans JP', "Helvetica Neue", Arial, "Hiragino Kaku Gothic ProN", "Hiragino Sans", Meiryo, sans-serif;
+	font-weight: 700;
+}
+
+.contact__success {
+	display: none;
+	text-align: center;
+	transition: .25s;
+}
+
+.contact__false {
+	color: red;
+	display: none;
+	text-align: center;
+	transition: .25s;
+}
+
+.footer {
+	padding-bottom: 31px;
+	padding-top: 58px;
+}
+
+.footer__copyright {
+	font-size: 0.875rem;
+	text-align: center;
 }
 
 @media screen and (max-width: 991px) {
@@ -516,6 +654,23 @@ body {
 
 .heading {
 	font-size: 1.25rem;
+}
+
+.contact__body {
+	margin-left: 5%;
+	margin-right: 5%;
+	padding: 20px 30px 30px 20px;
+}
+
+.contact__input-text {
+	height: 30px;
+	margin-bottom: 20px;
+	width: 100%;
+}
+
+.contact__input-textarea {
+	height: 90px;
+	margin-bottom: 20px;
 }
 
 }
@@ -732,8 +887,52 @@ body {
 
 .card__date {
 	bottom: 6px;
-	font-size: 0.875em;
+	font-size: 0.875rem;
 	right: 12px;
+}
+
+.card__heading {
+	font-size: 0.875rem;
+	margin-bottom: 20px;
+}
+
+.card__description {
+	font-size: 0.75rem;
+}
+
+.card--swipe .card__body {
+	padding: 10px 10px 15px 10px;
+}
+
+.works__english {
+	margin-bottom: 20px;
+}
+
+.contact {
+	padding-bottom: 20px;
+	padding-top: 20px;
+}
+
+.contact__english {
+	margin-bottom: 15px;
+}
+
+.contact__comment {
+	font-size: 0.875rem;
+	margin-bottom: 15px;
+}
+
+.contact__input-name {
+	margin-bottom: 20px;
+}
+
+.contact__must {
+	padding: 4px 10px;
+}
+
+.footer {
+	padding-bottom: 20px;
+	padding-top: 20px;
 }
 
 }

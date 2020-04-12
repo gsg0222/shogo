@@ -1,0 +1,124 @@
+.contact {
+    width: 100%;
+    padding-top: 70px;
+    padding-bottom: 73px;
+    background: linear-gradient(to right, $contact-start, $contact-end);
+
+    @include mq() {
+        padding-top: 20px;
+        padding-bottom: 20px;
+    }
+
+    &__heading {
+        margin-bottom: 17px;
+    }
+
+    &__english {
+        margin-bottom: 39px;
+
+        @include mq() {
+            margin-bottom: 15px;
+        }
+    }
+
+    &__comment {
+        color: $text-contact;
+        text-align: center;
+        line-height: 1.6875;
+        margin-bottom: 37px;
+
+        @include mq() {
+            margin-bottom: 15px;
+            font-size: 0.875rem;
+        }
+    }
+
+    &__body {
+        margin-right: 16%;
+        margin-left: 17.6%;
+        background-color: $bgc;
+        padding: 33px 70px 60px 52px;
+
+        @include mq(lg) {
+            margin-right: 5%;
+            margin-left: 5%;
+            padding: 20px 30px 30px 20px;
+        }
+    }
+
+    &__input-name {
+        display: inline-block;
+        margin-bottom: 42px;
+
+        @include mq() {
+            margin-bottom: 20px;
+        }
+    }
+
+    &__must {
+        display: inline-block;
+        background-color: $must-bgc;
+        border-radius: 10px;
+        color: $text-contact;
+        margin-left: 20px;
+        padding: 7px 16px;
+        top: 0.875rem;
+
+        @include mq() {
+            padding: 4px 10px;
+        }
+    }
+
+    &__input-text {
+        margin-bottom: 30px;
+        background-color: $sub-bgc;
+        width: 500px;
+        height: 43px;
+        appearance: none;
+        border: 1px solid $border;
+
+        @include mq(lg) {
+            margin-bottom: 20px;
+            width: 100%;
+            height: 30px;
+        }
+    }
+
+    &__input-textarea {
+        margin-bottom: 53px;
+        background-color: $sub-bgc;
+        border: 1px solid $border;
+        appearance: none;
+        width: 100%;
+        height: 180px;
+        resize: none;
+
+        @include mq(lg) {
+            margin-bottom: 20px;
+            height: 90px;
+        }
+    }
+
+    &__btn {
+        text-align: center;
+
+        .btn {
+            color: $text-btn;
+            font-family: Roboto, 'Noto Sans JP', "Helvetica Neue", Arial, "Hiragino Kaku Gothic ProN", "Hiragino Sans", Meiryo, sans-serif;
+            font-weight: 700;
+        }
+    }
+
+    &__success {
+        display: none;
+        text-align: center;
+        transition: .25s;
+    }
+
+    &__false {
+        display: none;
+        text-align: center;
+        transition: .25s;
+        color: $text-caution;
+    }
+}

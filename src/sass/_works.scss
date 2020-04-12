@@ -1,0 +1,16 @@
+.works {
+    width: 100%;
+    margin-bottom: 90px;
+
+    &__heading {
+        margin-bottom: 20px;
+    }
+
+    &__english {
+        margin-bottom: 70px;
+
+        @include mq() {
+            margin-bottom: 20px;
+        }
+    }
+}

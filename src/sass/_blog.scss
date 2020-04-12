@@ -2,6 +2,7 @@
     background-color: $sub-bgc;
     padding-top: 64px;
     padding-bottom: 90px;
+    margin-bottom: 64px;
 
     @include mq() {
         padding-top: 30px;
