@@ -21,6 +21,10 @@ var swiper = new Swiper('.swiper-container', {
 	spaceBetween: 10,
 	centeredSlides: true,
 	initialSlide: 1,
+	autoplay: {
+		delay: 3000,
+		disableOnInteraction: true
+	},
 	breakpoints: {
 		768: {
 			spaceBetween: 30,
