@@ -22,10 +22,15 @@
         }
     }
 
-
     &__img {
         width: 100%;
         object-fit: contain;
+    }
+
+    &__text {
+        @include mq() {
+            text-align: center;
+        }
     }
 
     &__strong {
@@ -103,8 +108,8 @@
                     margin-top: 20px;
                     margin-bottom: 20px;
                 }
-
             }
+
         }
     }
 
