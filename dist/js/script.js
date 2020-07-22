@@ -32,7 +32,7 @@ var swiper = new Swiper('.swiper-container', {
 });
 
 // ajaxでのフォーム投稿
-$(document).ready(function () {
+$(function () {
 
 	$('#form').submit(function (event) {
 		var formData = $('#form').serialize();
